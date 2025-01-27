@@ -3,8 +3,7 @@ FROM dawn001/z_mirror:hk_main
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN addgroup -g 10014 choreo && \
-    adduser  --disabled-password  --no-create-home --uid 10014 --ingroup choreo choreouser
+RUN adduser  --uid 10014 choreo
 
 USER 10014
 
